@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# 🎯 React Quiz Game  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[🚀 Live Demo](https://deansaiful.github.io/quiz-game/)  
 
-## Available Scripts
+## 📌 Project Summary  
 
-In the project directory, you can run:
+This **React-based Quiz App** allows users to choose from different quiz categories (**Science, Math, History**) and answer randomly shuffled questions. It provides instant feedback with a pop-up result and smooth transitions between questions.  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Key Features  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ✅ **Category Selection** – Choose between Science, Math, and History.  
+- ✅ **Dynamic Question Loading** – Loads category-specific questions from separate files inside the `data/` folder.  
+- ✅ **Randomized Questions** – Uses the **Fisher-Yates Shuffle** to randomize questions on each reload.  
+- ✅ **Answer Highlighting** – Selected answers turn **green if correct** and **red if incorrect**.  
+- ✅ **Result Pop-up** – Displays ✅ **Correct!** or ❌ **Wrong!** for 3 seconds before the next question appears.  
+- ✅ **Category-Specific Images/GIFs** – Each quiz category features a unique image or GIF before the first question.  
+- ✅ **Navigation System** – Includes a **Back button** in a fixed navbar (120px width).  
+- ✅ **Fully Responsive UI** – Built with **Tailwind CSS** for a seamless mobile-friendly experience.  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 How It Works  
 
-### `npm run build`
+1. The user lands on **Home.js**, clicks "Start Quiz," and is directed to **Categories.js**.  
+2. The user selects a **category (Science, Math, History)** → **Quiz.js** loads the category-specific questions.  
+3. A **GIF/image** related to the selected category appears before the first question.  
+4. The user selects an answer → The **button turns green/red**, and a **result popup** appears for 3 seconds.  
+5. After the result popup disappears, the **next question** appears randomly.  
+6. The user can exit the quiz anytime using the **Back button** in the navbar.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Installation & Setup  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the Repository:**  
+   ```bash
+   git clone https://github.com/DeanSaiful/quiz-game.git
+   cd quiz-game
+2. **Install Dependencies:**
+   ```bash
+   npm install
+3. *Run the App Locally:**
+   ```bash
+   npm start
+Open http://localhost:3000 in your browser.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# License
+This project is open-source and available under the MIT License.
